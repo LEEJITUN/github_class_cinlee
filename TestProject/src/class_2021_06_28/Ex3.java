@@ -11,25 +11,25 @@ public class Ex3 {
 		int won = sc.nextInt();
 		
 		int cnt = won /50000;
-		int num = won % 50000;
+		won %= 50000;
 		System.out.println("오만원권 " + cnt + "매");
-		 cnt = num /10000;
-		 num %= 10000;
+		 cnt = won /10000;
+		 won %= 10000;
 		System.out.println("만원권 " + cnt + "매");
-		 cnt = num /1000;
-		 num %= 1000;
+		 cnt = won /1000;
+		 won %= 1000;
 		System.out.println("천원권 " + cnt + "매");
-		 cnt = num /500;
-		 num %= 500;
+		 cnt = won /500;
+		 won %= 500;
 		System.out.println("오백원 " + cnt + "매");
-		 cnt = num /100;
-		 num %= 100;
+		 cnt = won /100;
+		 won %= 100;
 		System.out.println("백원 " + cnt + "매");
-		 cnt = num /50;
-		 num %= 50;
+		 cnt = won /50;
+		 won %= 50;
 		System.out.println("오십원 " + cnt+ "매");
-		 cnt = num /10;
-		 num %= 10;
+		 cnt = won /10;
+		 won %= 10;
 		System.out.println("십원 " + cnt + "매");
 
 

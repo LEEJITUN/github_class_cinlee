@@ -10,19 +10,22 @@ public class Ex6 {
 		
 		int num = sc.nextInt();
 		
-		
-		if(num < 10 ) {
-			if((num % 3 == 0)) {
-				System.out.println("¹Ú¼öÂ¦");
+		if(1< num && num > 100) {
+			
+			if(num < 10 ) {
+				if((num % 3 == 0)) {
+					System.out.println("¹Ú¼öÂ¦");
+				}
+			}else {			
+				if((num % 3 == 0) && ((num % 10 == 3) || (num % 10 == 6) || (num % 10 == 9))) {
+					System.out.println("¹Ú¼öÂ¦Â¦");							
+				}else if((num % 10 == 3) || (num % 10 == 6) || (num % 10 == 9)) {
+					System.out.println("¹Ú¼öÂ¦");				
+				}else if((num % 30 == 0)) {
+					System.out.println("¹Ú¼öÂ¦");
+				}
 			}
-		}else {			
-			if((num % 3 == 0) && ((num % 10 == 3) || (num % 10 == 6) || (num % 10 == 9))) {
-				System.out.println("¹Ú¼öÂ¦Â¦");							
-			}else if((num % 10 == 3) || (num % 10 == 6) || (num % 10 == 9)) {
-				System.out.println("¹Ú¼öÂ¦");				
-			}else if((num % 30 == 0)) {
-				System.out.println("¹Ú¼öÂ¦");
-			}
+
 		}
 	}
 
