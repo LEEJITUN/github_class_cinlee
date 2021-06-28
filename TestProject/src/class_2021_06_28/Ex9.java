@@ -17,12 +17,12 @@ public class Ex9 {
 		int x2 = sc.nextInt();
 		int y2 = sc.nextInt();
 		
-		
-		
-		
-		
-		
-		System.out.println("원의 중심과 반지름 입력 >> ");
+		if((x2 - x1) <= rat ){
+			System.out.println("점 ("+ x2 + "," + y2 + ")는 원 안에 있다.");
+		}else {
+			System.out.println("점 ("+ x2 + "," + y2 + ")는 원 안에 있지 않다.");			
+		}
+
 	}
 
 }
