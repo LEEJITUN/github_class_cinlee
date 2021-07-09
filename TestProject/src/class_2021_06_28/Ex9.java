@@ -9,20 +9,22 @@ public class Ex9 {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("원의 중심과 반지름 입력 >> ");
-		int x1 = sc.nextInt();
-		int y1 = sc.nextInt();
-		float rat = sc.nextFloat();
+		double x1 = sc.nextInt();
+		double y1 = sc.nextInt();
+		double rad = sc.nextFloat();
 		
 		System.out.println("점 입력 >> ");
-		int x2 = sc.nextInt();
-		int y2 = sc.nextInt();
+		double x2 = sc.nextDouble();
+		double y2 = sc.nextInt();
 		
-		if((x2 - x1) <= rat ){
+		double dist = Math.sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));
+		
+		if(dist <= rad ){
 			System.out.println("점 ("+ x2 + "," + y2 + ")는 원 안에 있다.");
 		}else {
 			System.out.println("점 ("+ x2 + "," + y2 + ")는 원 안에 있지 않다.");			
 		}
-
+		sc.close();
 	}
 
 }

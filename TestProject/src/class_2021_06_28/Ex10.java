@@ -16,6 +16,7 @@ public class Ex10 {
 		int x2 = sc.nextInt();
 		int y2 = sc.nextInt();
 		int rat2 = sc.nextInt();
+		
 	}
 
 }
